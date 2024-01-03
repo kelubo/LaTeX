@@ -28,6 +28,18 @@
 	chapter/number={\chinese{chapter}}
 }
 
+% 设置 chapter 标题格式（古代小说，标题分两行）。
+\usepackage{varwidth}
+\ctexset{
+	chapter/name={第,回},
+	chapter/titleformat= \chaptertitleformat
+}
+\newcommand\chaptertitleformat[1]{
+	\begin{varwidth}
+		[t]{.7\linewidth}#1
+	\end{varwidth}
+}
+
 % 设置古文原文格式。
 \newenvironment{yuanwen}{\bfseries\zihao{4}}
 
