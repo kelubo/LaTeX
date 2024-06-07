@@ -40,6 +40,10 @@
 	\end{varwidth}
 }
 
+% 图片相关设置。
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+
 % 设置古文原文格式。
 \newenvironment{yuanwen}{\bfseries\zihao{4}}
 
@@ -72,6 +76,13 @@
 \chapter{1}
 \section{1}
 \section{2}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{1}
+	\caption{}
+	\label{fig:1}
+\end{figure}
 
 \backmatter
 
